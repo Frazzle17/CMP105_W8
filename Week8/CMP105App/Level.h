@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
+#include "Collider.h"
 
 
 class Level{
@@ -23,4 +24,10 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	Collider ball;
+	sf::Texture ballTexture;
+
+	Collider square1;
+	Collider square2;
 };
